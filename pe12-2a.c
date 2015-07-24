@@ -17,13 +17,6 @@ void set_mode(int input)
 		printf("Invalid mode specified. Mode 1 (US) used.\n");
 		mode = 1;
 	}
-	else if (input == -1) {
-		mode = -1;		
-	} 
-	else if (input < -1) {
-		printf("Invalid mode specified. Quit.\n");
-		mode = -1;
-	}
 }
 
 void get_info() 
@@ -54,8 +47,5 @@ void show_info()
 	else if (mode == 1) {
 		mpg = distance / fuel;
 		printf ("Fuel consumption is %.1f miles per gallon.\n", mpg);
-	}
-	else if(mode == -1) {
-		printf ("Done.\n");
 	}
 }
