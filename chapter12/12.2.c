@@ -1,4 +1,4 @@
-/*Created by Yawei July 7th 2015*/
+/*Created by Yawei Zhang July 7th 2015*/
 
 
 #include <stdio.h>
