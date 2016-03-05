@@ -22,7 +22,7 @@ void init(struct player *players);
 void get_info(struct player *players);
 void cal_average(struct player *players);
 void display(struct player *players);
-void print(struct player *players);
+
 
 int main(int argc, char *argv[])
 {	
@@ -147,9 +147,3 @@ void display(struct player *players)
 		total_rebound, total_assists, total_made_three, total_three_propotion);
 }
 
-void print(struct player *players)
-{
-	for (int i = 0; i < MAX; i++) {
-		printf("No. %d, %d, %s %s.\n", i, players[i].uni_num, players[i].fname, players[i].lname);
-	}
-}
